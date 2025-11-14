@@ -62,11 +62,11 @@ public class UserInterface
         Console.Write("Match".PadRight(16));
         Console.Write("Mode".PadRight(16));
         Console.Write("Score".PadRight(16) + "\n");
-        
+
         MatchHistory.DisplayHistory();
-        
+
         Console.WriteLine();
         Console.WriteLine("Press <Enter> to return to the main menu... ");
-        while (Console.ReadKey().Key != ConsoleKey.Enter) {}
+        while (Console.ReadKey().Key != ConsoleKey.Enter) ;
     }
 }

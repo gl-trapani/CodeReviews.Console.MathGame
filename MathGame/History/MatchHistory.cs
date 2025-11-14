@@ -2,17 +2,17 @@ namespace MathGame.History;
 
 public static class MatchHistory
 {
-    private static List<Match> _historyList { get; set; }= new List<Match>();
+    private static List<Match> HistoryList { get; set; }= new List<Match>();
 
     public static void AddMatch(Match match)
     {
-        match.Id = _historyList.Count + 1;
-        _historyList.Add(match);
+        match.Id = HistoryList.Count + 1;
+        HistoryList.Add(match);
     }
     
     public static void DisplayHistory()
     {
-        foreach (var match in _historyList)
+        foreach (var match in HistoryList)
         {
             Console.Write($"#{match.Id}".PadRight(16));
             Console.Write($"{match.Mode}".PadRight(16));

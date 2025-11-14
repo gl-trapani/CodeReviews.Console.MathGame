@@ -6,7 +6,7 @@ namespace MathGame.GameModes;
 public abstract class GameMode
 {
     private Random _random = new();
-    public int Score { get; set; } = 0;
+    public int Score { get; set; }
     public int Round { get; set; } = 1;
     public int MaxRound { get; set; } = 5;
     
@@ -28,7 +28,7 @@ public abstract class GameMode
             while (Console.ReadKey().Key != ConsoleKey.Enter) {}
         }
         Console.Write("Press <Enter> to return to the main menu... ");
-        while (Console.ReadKey().Key != ConsoleKey.Enter) {}
+        while (Console.ReadKey().Key != ConsoleKey.Enter) ;
     }
 
     protected abstract void Prompt(Random random);

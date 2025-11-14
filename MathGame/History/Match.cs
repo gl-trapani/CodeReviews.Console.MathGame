@@ -3,10 +3,10 @@ namespace MathGame.History;
 
 public class Match
 {
-    public int Id { get; set; } = 0;
+    public int Id { get; set; }
     public Modes Mode { get; set; }
     
-    public int Score { get; set; } = 0;
+    public int Score { get; set; }
     
     public Match(Modes gameMode, int score)
     {
