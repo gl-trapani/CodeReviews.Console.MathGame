@@ -25,10 +25,10 @@ public abstract class GameMode
             if (Round > MaxRound)
                 continue;
             Console.Write("Press <Enter> for the next round... ");
-            while (Console.ReadKey().Key != ConsoleKey.Enter) {}
+            Console.ReadLine();
         }
         Console.Write("Press <Enter> to return to the main menu... ");
-        while (Console.ReadKey().Key != ConsoleKey.Enter) ;
+        Console.ReadLine();
     }
 
     protected abstract void Prompt(Random random);

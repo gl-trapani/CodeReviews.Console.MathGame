@@ -66,7 +66,7 @@ public class UserInterface
         MatchHistory.DisplayHistory();
 
         Console.WriteLine();
-        Console.WriteLine("Press <Enter> to return to the main menu... ");
-        while (Console.ReadKey().Key != ConsoleKey.Enter) ;
+        Console.Write("Press <Enter> to return to the main menu... ");
+        Console.ReadLine();
     }
 }
