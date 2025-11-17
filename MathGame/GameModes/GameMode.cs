@@ -13,6 +13,7 @@ public abstract class GameMode
     public void Play()
     {
         Round = 1;
+        Score = 0;
         
         while (Round <= MaxRound)
         {
